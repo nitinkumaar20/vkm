@@ -1,10 +1,20 @@
-import Image from "next/image";
 import Header from "./components/Header";
-
+import Slider from "./components/Slider";
+import "./style.css";
+import AboutSection from "./components/About";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 export default function Home() {
   return (
-   <>
-  <Header/>
-   </>
+    <>
+      <div className="openSans">
+        <Header />
+        <Slider />
+        <AboutSection/>
+        <Contact/>
+        <Footer/>
+        
+      </div>
+    </>
   );
 }
