@@ -3,9 +3,9 @@ import React from "react";
 const Contact = () => {
   return (
     <div id="contact">
-      <div className="flex p-10">
+      <div className="flex p-10 md:flex-row flex-col">
         <div>
-          <h1 className="font-semibold text-xl text-center">
+          <h1 className="font-semibold text-xl text-center py-5">
             Contact Head Branch
           </h1>
 
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="py-5">
           <img
             src="https://drive.google.com/thumbnail?id=10H9p9LwrPmOBh1lLtWh9PaYSy99K67Tr&sz=w500"
             alt=""
