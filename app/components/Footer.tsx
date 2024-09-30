@@ -1,11 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <section>
+    <section className="max-w-[1200px] 2xl:max-w-[1440px] md:mx-auto ">
       <footer className="px-5 lg:px-24 py-10">
-        <div className="flex gap-10 flex-col md:flex-row">
-          <div className="w-1/3">
+        <div className="grid gap-10 grid-cols-2 lg:grid-cols-3 ">
+          <div className=" col-span-2 lg:col-span-1">
             <h4 className="font-bold text-xl">Vkm healing ministry</h4>
             <h6 className="text-base font-medium">
               VKM Healing Ministry, led by Prophet Vishal Karanwal, is dedicated
@@ -16,10 +17,10 @@ const Footer = () => {
             </h6>
           </div>
 
-          <div className="w-1/3 flex  flex-col items-center">
+          <div className=" flex  flex-col items-center">
             <h4 className="text-black font-bold text-xl pb-2">Social Links</h4>
             <div className="flex gap-5">
-              <a href="https://www.instagram.com/nitinkumaar20/" target="_new">
+              <a href="https://www.instagram.com" target="_new">
                 <img
                   className="w-[2rem] h-[2rem]"
                   src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000"
@@ -35,7 +36,7 @@ const Footer = () => {
                 />
               </a>
 
-              <a href="https://www.linkedin.com/in/nitink4800/" target="_new">
+              <a href="https://www.linkedin.com" target="_new">
                 <img
                   className="w-[2rem] h-[2rem]"
                   src="https://drive.google.com/thumbnail?id=1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk&sz=w1000"
@@ -45,27 +46,27 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-1/3 ">
+          <div className=" ">
             <h4 className="text-black font-bold text-xl pb-2">Quick Links</h4>
             <div className=" flex-col  pt-2 pb-3 space-y-1">
-              <a
-                href="#home"
+              <Link
+                href="/"
                 className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#about"
                 className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#contact"
                 className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>

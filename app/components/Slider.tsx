@@ -14,7 +14,8 @@ const Links = [
 
 const Slider = () => {
   return (
-      <div className="  ">
+
+      <div className=" md:pt-20 pt-16" >
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
@@ -36,6 +37,7 @@ const Slider = () => {
           ))}
         </Swiper>
       </div>
+
   );
 };
 

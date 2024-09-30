@@ -2,14 +2,14 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <div className="flex p-10 md:flex-row flex-col">
+    <div id="contact" className="max-w-[1200px] 2xl:max-w-[1440px] md:mx-auto">
+      <div className="flex lg:p-10 p-5 md:flex-row flex-col">
         <div>
-          <h1 className="font-semibold text-xl text-center py-5">
+          <h1 className="font-bold text-xl text-center py-5">
             Contact Head Branch
           </h1>
 
-          <div className="flex">
+          <div className="flex gap-3">
             <div>
               <svg
                 className="h-14 w-14"
@@ -18,8 +18,8 @@ const Contact = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M7 2.75c-1.615 0-3.075.404-4.135 1.388C1.795 5.132 1.25 6.607 1.25 8.5v7c0 1.893.545 3.369 1.615 4.362 1.06.984 2.52 1.388 4.135 1.388h10c1.615 0 3.075-.404 4.135-1.388 1.07-.993 1.615-2.469 1.615-4.362v-7c0-1.893-.545-3.368-1.615-4.362-1.06-.984-2.52-1.388-4.135-1.388H7Zm12.229 5.612a.75.75 0 0 0-.918-1.187l-5.547 4.287a1.25 1.25 0 0 1-1.528 0L5.689 7.175a.75.75 0 1 0-.918 1.187l5.548 4.287a2.75 2.75 0 0 0 3.362 0l5.548-4.287Z"
                   fill="#000"
                 />
@@ -28,13 +28,13 @@ const Contact = () => {
 
             <div className="flex flex-col">
               <h1 className="font-bold">Email Address</h1>
-              <p className="text-lg font-medium">
+              <p className="text-lg ">
                 {" "}
                 info@ankurnarula.org prayer@ankurnarula.org
               </p>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex gap-3">
             <div>
               <svg
                 className="h-14 w-14"
@@ -52,13 +52,13 @@ const Contact = () => {
               </svg>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <h1 className="font-bold">Call Us</h1>
               <p>Phone: 01815207777</p>
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex gap-3">
             <div>
               <svg
                 className="h-14 w-14"
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="py-5">
+        <div className="py-5 text-center flex justify-center items-center">
           <img
             src="https://drive.google.com/thumbnail?id=10H9p9LwrPmOBh1lLtWh9PaYSy99K67Tr&sz=w500"
             alt=""

@@ -1,43 +1,52 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Navbar: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
 
+  // Toggle function for opening and closing the menu
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
 
+  // Close the menu on link click
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   return (
-    <nav className="bg-white shadow-md">
+    <div className='max-w-[1200px] 2xl:max-w-[1440px] md:mx-auto'>
+
+    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center md:h-20 h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-gray-800">
               <img
                 src="https://drive.google.com/thumbnail?id=1TBRq7DN1B_j73rYX7ep-sBD8bV827Ig7"
                 alt="Logo"
-                className="h-32 rounded-full"
+                className="md:h-32 h-24 rounded-full"
               />
             </a>
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex space-x-4">
-            <a href="#home" className="text-gray-700 hover:text-gray-900 font-semibold text-lg">
+          <div className="hidden md:flex space-x-4 ">
+            <Link href="/" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
               Home
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900 font-semibold text-lg">
+            </Link>
+            <Link href="https://www.youtube.com/@vkmhealingministryuk509" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
               Sermons
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900 font-semibold text-lg">
+            </Link>
+            <Link href="#about" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
               About
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900 font-semibold text-lg">
+            </Link>
+            <Link href="#contact" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Hamburger Menu for Mobile */}
@@ -113,28 +122,33 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#home"
+        <div className="px-2 pt-2 pb-3 space-y-1 text-lg font-semibold">
+          <Link
+            href="/"
+            onClick={closeNav} // Close the menu on link click
             className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="#about"
+            onClick={closeNav} // Close the menu on link click
             className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
+            onClick={closeNav} // Close the menu on link click
             className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
+    </div>
+
   );
 };
 

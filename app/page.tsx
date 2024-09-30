@@ -4,14 +4,15 @@ import "./style.css";
 import AboutSection from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Prayer from "./components/Prayer";
 export default function Home() {
   return (
     <>
       <div className="openSans">
         <Header />
         <Slider />
-        <AboutSection/>
         <Contact/>
+        <Prayer/>
         <Footer/>
         
       </div>
