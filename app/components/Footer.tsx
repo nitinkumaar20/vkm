@@ -51,19 +51,19 @@ const Footer = () => {
             <div className=" flex-col  pt-2 pb-3 space-y-1">
               <Link
                 href="/"
-                className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
+                className="block text-black hover:text-yellow-500  py-2 rounded-md font-bold"
               >
                 Home
               </Link>
               <Link
                 href="#about"
-                className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
+                className="block text-black hover:text-yellow-500  py-2 rounded-md font-bold"
               >
                 About
               </Link>
               <Link
                 href="#contact"
-                className="block text-gray-700 hover:text-gray-900  py-2 rounded-md font-bold"
+                className="block text-black hover:text-yellow-500  py-2 rounded-md font-bold"
               >
                 Contact
               </Link>

@@ -35,16 +35,16 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex space-x-4 ">
-            <Link href="/" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
+            <Link href="/" className="text-black hover:text-yellow-500 font-semibold text-lg">
               Home
             </Link>
-            <Link href="https://www.youtube.com/@vkmhealingministryuk509" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
+            <Link href="#sermons" className="text-black hover:text-yellow-500 font-semibold text-lg">
               Sermons
             </Link>
-            <Link href="#about" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
+            <Link href="#about" className="text-black hover:text-yellow-500 font-semibold text-lg">
               About
             </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-yellow-500 font-semibold text-lg">
+            <Link href="#contact" className="text-black hover:text-yellow-500 font-semibold text-lg">
               Contact
             </Link>
           </div>
@@ -126,21 +126,24 @@ const Navbar: React.FC = () => {
           <Link
             href="/"
             onClick={closeNav} // Close the menu on link click
-            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+            className="block text-black hover:text-yellow-500 font-semibold text-lg px-3 py-2   rounded-md"
           >
             Home
           </Link>
+          <Link href="#sermons" className="text-black px-3 py-2  block text-start hover:text-yellow-500 font-semibold text-lg">
+              Sermons
+            </Link>
           <Link
             href="#about"
             onClick={closeNav} // Close the menu on link click
-            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+            className="block text-black hover:text-yellow-500 font-semibold text-lg px-3 py-2  rounded-md"
           >
             About
           </Link>
           <Link
             href="#contact"
             onClick={closeNav} // Close the menu on link click
-            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+            className="block text-black hover:text-yellow-500 font-semibold text-lg px-3 py-2   rounded-md"
           >
             Contact
           </Link>

@@ -1,27 +1,20 @@
 import React from 'react';
-
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">About Us</h2>
-        <p className="text-lg text-gray-600 mb-8">
-          At <span className="font-semibold">[Your Company Name]</span>, we're passionate about <span className="font-semibold">[what you do]</span>. 
-          Since our founding in <span className="font-semibold">[year]</span>, we've been committed to delivering 
-          <span className="font-semibold">[products/services]</span> that <span className="font-semibold">[benefit your target audience]</span>.
-        </p>
-
-        <h3 className="text-2xl font-semibold text-gray-700 mb-4">Our Mission</h3>
-        <p className="text-lg text-gray-600 mb-8">
-          Our mission is to <span className="font-semibold">[state your mission]</span>. We believe in <span className="font-semibold">[core values]</span>, 
-          and these principles guide everything we do.
-        </p>
-
-        <h3 className="text-2xl font-semibold text-gray-700 mb-4">Why Choose Us?</h3>
-        <p className="text-lg text-gray-600">
-          What sets us apart is <span className="font-semibold">[unique qualities]</span> that drive us to exceed expectations and 
-          continuously innovate in our field.
-        </p>
+    <section
+      className="relative h-screen bg-fixed bg-center bg-cover mt-5"
+      id='about'
+      style={{ backgroundImage: 'url("https://cdn.pixabay.com/photo/2023/04/25/15/08/church-7950418_1280.jpg")' }}
+    >
+      <div className="absolute inset-0 grid lg:grid-cols-2 items-center justify-center lg:px-24 px-10">
+        <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+          <h1 className="text-2xl font-bold text-start">ABOUT</h1>
+          <p className="text-start mt-4 "> VKM Healing Ministry, led by Prophet Vishal Karanwal, is dedicated
+              to offering healing and restoration through prayer and spiritual
+              guidance. The ministry focuses on bringing hope, transformation,
+              and wellness to individuals through prophetic teachings and
+              healing services.</p>
+        </div>
       </div>
     </section>
   );
